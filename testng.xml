@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+
+<suite name="Automation Suite">
+<listeners>
+    <listener class-name="com.aventstack.extentreports.testng.listener.ExtentITestListenerClassAdapter"/>
+    <listener class-name="com.listeners.TestListener"/>
+</listeners>
+    <test name="Login Tests">
+
+        <classes>
+            <class name="com.Test.loginpage"/> 
+            <class name="com.Test.ProfilePageTest"/> 
+            <class name="com.Test.DiscoveryTest"/> 
+            <class name="com.Test.HoldingTest"/> 
+            <class name="com.Test.CartTest"/> 
+           
+        </classes>
+
+    </test>
+
+</suite>
